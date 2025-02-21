@@ -12,6 +12,8 @@ public enum LottoRank {
     FIFTH(3, false, 5_000),
     NONE(0, false, 0);
 
+    private static final int BONUS_CRITERIA = 5;
+
     private final int matchCount;
     private final boolean requiresBonus;
     private final int prize;
@@ -34,7 +36,7 @@ public enum LottoRank {
     }
 
     public static LottoRank findRank(int matchCount, boolean hasBonus) {
-        if (hasBonus && matchCount == 5) {
+        if (hasBonus && matchCount == BONUS_CRITERIA) {
             return SECOND;
         }
         return RANK_MAP.getOrDefault(matchCount, NONE);

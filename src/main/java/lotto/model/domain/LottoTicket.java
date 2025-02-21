@@ -9,15 +9,18 @@ import java.util.stream.Collectors;
 
 public class LottoTicket {
     private final List<Lotto> tickets;
+    private static final int LOTTO_MIN_NUMBER = 1;  // 🎯 로또 번호 최소값
+    private static final int LOTTO_MAX_NUMBER = 45; // 🎯 로또 번호 최대값
+    private static final int LOTTO_SIZE = 6;
 
     public LottoTicket(int count) {
         this.tickets = IntStream.range(0, count)
                 .mapToObj(i -> generateLotto())
-                .collect(Collectors.toList()); // ✅ Immutable List 대신 변경 가능한 List 사용
+                .collect(Collectors.toList());
     }
 
     private Lotto generateLotto() {
-        List<Integer> numbers = new ArrayList<>(Randoms.pickUniqueNumbersInRange(1, 45, 6)); // ✅ 변경 가능한 List로 변환
+        List<Integer> numbers = new ArrayList<>(Randoms.pickUniqueNumbersInRange(LOTTO_MIN_NUMBER, LOTTO_MAX_NUMBER, LOTTO_SIZE));
         Collections.sort(numbers);
         return new Lotto(numbers);
     }
