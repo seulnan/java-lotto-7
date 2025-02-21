@@ -1,9 +1,9 @@
 package lotto.service;
 
 import lotto.model.dto.LottoResultDto;
-import lotto.model.entity.Lotto;
-import lotto.model.entity.LottoTicket;
-import lotto.model.entity.WinningLotto;
+import lotto.model.domain.Lotto;
+import lotto.model.domain.LottoTicket;
+import lotto.model.domain.WinningLotto;
 import lotto.enums.LottoRank;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

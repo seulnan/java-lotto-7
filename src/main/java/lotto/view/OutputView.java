@@ -3,7 +3,7 @@ package lotto.view;
 import java.util.Comparator;
 import lotto.model.dto.LottoResultDto;
 import lotto.enums.LottoRank;
-import lotto.model.entity.LottoTicket;
+import lotto.model.domain.LottoTicket;
 
 import java.text.NumberFormat;
 import java.util.Arrays;

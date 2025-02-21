@@ -1,4 +1,4 @@
-package lotto.model.entity;
+package lotto.model.domain;
 
 import java.util.HashSet;
 import java.util.List;

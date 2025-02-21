@@ -2,8 +2,8 @@ package lotto.utils;
 
 import lotto.enums.LottoRank;
 import lotto.model.dto.LottoResultDto;
-import lotto.model.entity.LottoTicket;
-import lotto.model.entity.WinningLotto;
+import lotto.model.domain.LottoTicket;
+import lotto.model.domain.WinningLotto;
 
 import java.util.EnumMap;
 import java.util.Map;

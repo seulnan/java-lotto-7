@@ -2,8 +2,8 @@ package lotto.service;
 
 import lotto.enums.LottoPrice;
 import lotto.model.dto.LottoResultDto;
-import lotto.model.entity.LottoTicket;
-import lotto.model.entity.WinningLotto;
+import lotto.model.domain.LottoTicket;
+import lotto.model.domain.WinningLotto;
 import lotto.utils.LottoResultCalculator;
 
 public class LottoService {

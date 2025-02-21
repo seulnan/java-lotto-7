@@ -2,8 +2,8 @@ package lotto.controller;
 
 import java.util.List;
 import lotto.model.dto.LottoResultDto;
-import lotto.model.entity.LottoTicket;
-import lotto.model.entity.WinningLotto;
+import lotto.model.domain.LottoTicket;
+import lotto.model.domain.WinningLotto;
 import lotto.service.LottoService;
 import lotto.view.InputView;
 import lotto.view.OutputView;
