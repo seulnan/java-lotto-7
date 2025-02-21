@@ -40,6 +40,7 @@ public class InputView {
                 System.out.println("보너스 번호를 입력해 주세요.");
                 int bonusNumber = InputValidator.validateBonusNumber(Console.readLine());
                 LottoValidator.validateBonusNumber(bonusNumber, winningNumbers);
+                System.out.println();
                 return bonusNumber;
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
