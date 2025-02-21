@@ -29,7 +29,7 @@ public class OutputView {
     private String formatLottoRank(LottoResultDto result) {
         return Stream.of(LottoRank.values())
                 .filter(rank -> rank != LottoRank.NONE)
-                .sorted(Comparator.comparingInt(LottoRank::getMatchCount).reversed())
+                .sorted(Comparator.comparingInt(LottoRank::getMatchCount))
                 .map(rank -> formatLottoRankString(rank, result))
                 .collect(Collectors.joining());
     }
